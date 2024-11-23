@@ -1,10 +1,10 @@
 class BMI():
-    def __init__(self,name:str,height:float,wright:float):
+    def __init__(self,name:str,height:float,weight:float):
         self.name = name #attribute
         self.height = height #attribute
-        self.wright = wright #attribute
+        self.weight = weight #attribute
 
-    def get_status(bmi:float)->str:
+    def get_status(self,bmi:float)->str:
         '''
         docstring
         Parameter:
@@ -30,7 +30,7 @@ class BMI():
     return bmi_str
 
     def get_BMI():
-        BMI_value=
+        BMI_value= round(self.weight/((self.height/100)**2), 2)
     return BMI_value
 
 
