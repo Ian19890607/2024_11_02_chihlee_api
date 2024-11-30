@@ -1,3 +1,4 @@
+#streamlit run lesson5_6.py
 import streamlit as st
 
 st.write('## 第3章')
