@@ -7,15 +7,18 @@ import random
 
 def main():
     number_list=[]
-    while (len(number_list)<8):   #產生7個隨機亂數
+    while (len(number_list)<7):   #產生7個隨機亂數
         random_number = random.randint(1, 49)
         number_list.append(random_number)
         number_list_remove_duplicate=list(set(number_list))
 
-        if len(number_list)<=7:  #非特別號，進行排序
+        if len(number_list)<=6:  #非特別號，進行排序
             number_list_sorted=sorted(number_list_remove_duplicate, reverse=False)    #進行排序
             number_list=number_list_sorted[:]
-    print(f"本期大樂透電腦選號號碼如下:\n{number_list}")
+    print(f"本期大樂透電腦選號號碼如下:\n")
+    for ii in number_list:
+        print(ii,end=' ')
+    print("\n")      
     print(f"特別號:{number_list[-1]}")
 
 if __name__ == '__main__':
