@@ -1,3 +1,6 @@
+#要先安裝 pip install matplotlib
+#要先安裝 pip install streamlit-clickable-images 
+
 import streamlit as st
 from streamlit_clickable_images import clickable_images
 import tensorflow as tf
